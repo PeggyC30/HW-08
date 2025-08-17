@@ -1,0 +1,44 @@
+.hero {
+  background-image: url(/assets/images/index/hero-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 112px;
+  padding-bottom: 163px;
+}
+@media (min-width: 992px) {
+  .hero {
+    padding-top: 300px;
+    padding-bottom: 474px;
+  }
+}
+.hero-lg-search {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .hero-lg-search {
+    width: 720px;
+  }
+}
+.recommend {
+  background-color: #221f1e;
+  .card {
+    border-radius: 16px;
+    width: 277px;
+  }
+}
+@media (min-width: 992px) {
+  .recommend .card {
+    width: 25%;
+    max-width: 416px;
+    height: 600px;
+    transition: width 0.3s;
+    &:hover {
+      width: 100%;
+      button {
+        display: block !important;
+      }
+    }
+  }
+}

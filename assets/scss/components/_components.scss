@@ -1,0 +1,15 @@
+// .btn {
+//   padding-top: 16px;
+//   padding-bottom: 16px;
+// }
+.btn-primary {
+  &:hover {
+    background-color: $primary-120;
+  }
+}
+.form-control {
+  color: $neutral-80;
+  &::placeholder {
+    color: $neutral-60;
+  }
+}

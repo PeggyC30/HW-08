@@ -1,0 +1,77 @@
+.display-72-b {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.title-16-b {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.subtitle-14-b {
+  font-size: 14px;
+  font-weight: 700;
+}
+.body-16-r {
+  font-size: 16px;
+}
+.body2-14-r {
+  font-size: 14px;
+}
+.tiny-12-r {
+  font-size: 12px;
+}
+@media (min-width: 992px) {
+  .fs-lg-display-72-b {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+}
+@media (min-width: 992px) {
+  .fs-lg-title-16-b {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+        )
+      ),
+  )
+);
+$utilities: map-merge(
+  $utilities,
+  (
+    "display": (
+      property: font-size,
+      class: display,
+      values: $display-font-sizes,
+      responsive: true,
+    ),
+  )
+);
+$utilities: map-merge(
+  $utilities,
+  (
+    "icon-size": (
+      property: font-size,
+      class: icon,
+      // 這個會生成 icon-* class
+      values:
+        (
+          14: 14px,
+          // 會生成 icon-14
+          24: 24px // 會生成 icon-24,,
+        ),
+      responsive: true // 生成 icon-sm-14 / icon-lg-24 等,,
+    ),
+  )
+);

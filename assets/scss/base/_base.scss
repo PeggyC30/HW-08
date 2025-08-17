@@ -1,0 +1,33 @@
+/* 標籤的基本樣式 */
+body {
+  // font-family: "Noto Sans TC",sans-serif;     $font-family-base
+  // line-height: 1.5;                           $line-height
+  letter-spacing: 0.02em;
+  // color: black;                               $body-color
+}
+//enable-rfs:false
+
+img {
+  //img-fluid
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+  // text-decoration: none;                        $link-decoration
+  color: inherit;
+}
+
+// h1,                                             $headings-margin-bottom
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   margin-bottom: 0;
+// }
+
+// p {                                               $paragraph-margin-bottom
+//   margin-bottom: 0;
+// }

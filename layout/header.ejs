@@ -1,0 +1,218 @@
+<nav class="navbar bg-white py-4 fixed-top">
+    <div class="container position-relative">
+      <div class="d-flex align-items-center me-auto gap-7">
+        <a class="navbar-brand p-0" href="index"
+          ><img src="/assets/images/LOGO.png" alt="logo"
+        /></a>
+        <form action="" class="position-relative d-none d-lg-block">
+          <span
+            class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60"
+          >
+            search
+          </span>
+          <input
+            type="search"
+            class="naebar-lg-search form-control rounded-3 py-2 ps-10"
+            id="naebar-lg-search"
+            placeholder="搜尋景點、地點或城市"
+          />
+        </form>
+      </div>
+      <div
+        class="collapse position-absolute start-0 end-0 px-4 bg-white z-1"
+        id="collapseExample"
+      >
+        <div class="d-flex align-items-center">
+          <form action="" class="position-relative w-100">
+            <span
+              class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60"
+            >
+              search
+            </span>
+            <input
+              type="search"
+              class="form-control rounded-3 py-2 ps-10"
+              id="exampleFormControlInput1"
+              placeholder="搜尋景點、地點或城市"
+            />
+          </form>
+          <button
+            type="button"
+            class="btn p-2 border-0"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseExample"
+          >
+            <span class="material-icons-outlined text-neutral-80"> close </span>
+          </button>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="btn py-0 p-2 border-0 d-lg-none"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseExample"
+      >
+        <span class="material-icons-outlined align-bottom text-neutral-80">
+          search
+        </span>
+      </button>
+      <a href="#" class="btn py-2 border-0 me-lg-5">
+        <span class="position-relative">
+          <span
+            class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-alert cart-tag p-0"
+            >2</span
+          >
+          <span class="material-icons-outlined align-bottom text-neutral-80">
+            shopping_cart
+          </span>
+        </span>
+      </a>
+      <a
+        href=""
+        class="btn btn-primary d-none d-lg-block"
+        class="d-lg-flex gap-2 d-none d-lg-block"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation"
+        >登入 / 註冊</a
+      >
+      <a
+        href=""
+        class="d-lg-flex gap-2 d-none d-lg-block"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar-user"
+        aria-controls="offcanvasNavbar-user"
+        aria-label="Toggle navigation"
+        ><img
+          src="/assets/images/user/avatar-1.png"
+          alt="user"
+          class="user-img"
+        />
+        <p class="title-16-b text-primary-100">Jessica</p></a
+      >
+
+      <button
+        class="btn py-0 border-0 d-lg-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar-user"
+        aria-controls="offcanvasNavbar-user"
+        aria-label="Toggle navigation"
+      >
+        <span class="material-icons py-2 text-neutral-80"> menu </span>
+      </button>
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <div class="pt-11 px-7 pb-7 position-relative h-100">
+          <button
+            type="button"
+            class="btn position-absolute top-0 end-0 mt-7 me-7 p-0"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <span class="material-icons-outlined text-neutral-80"> close </span>
+          </button>
+          <div class="body d-flex flex-column h-100">
+            <div
+              class="d-flex gap-2 align-items-center pb-5 border-bottom border-neutral-40"
+            >
+              <span
+                class="material-icons-outlined bg-primary-40 text-white rounded-circle p-1"
+              >
+                account_circle
+              </span>
+              <div>
+                <h5 class="title-16-b text-primary-100">訪客</h5>
+                <p class="body-16-r text-neutral-80">未登入</p>
+              </div>
+            </div>
+            <div class="pt-7">
+              <h4 class="fs-6 text-primary-100 mb-1">歡迎來到 ZOBAA</h4>
+              <p class="body-16-r text-neutral-80">
+                加入會員即可立即訂購、收藏行程，並享相關優惠好禮。
+              </p>
+            </div>
+            <a href="user" class="btn btn-primary w-100 mt-auto">登入 / 註冊</a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasNavbar-user"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <div class="pt-11 px-7 pb-7 position-relative h-100">
+          <button
+            type="button"
+            class="btn position-absolute top-0 end-0 mt-7 me-7 p-0"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <span class="material-icons-outlined text-neutral-80"> close </span>
+          </button>
+          <div class="body d-flex flex-column h-100">
+            <div
+              class="d-flex gap-2 align-items-center pb-5 border-bottom border-neutral-40"
+            >
+              <img
+                src="/assets/images/user/avatar-1.png"
+                alt="user"
+                class="user-img"
+              />
+
+              <div>
+                <h5 class="title-16-b text-primary-100">Jessica</h5>
+                <p class="body-16-r text-neutral-80">jessica.yen@gamil.com</p>
+              </div>
+            </div>
+            <div class="pt-5 h-100">
+              <ul class="d-flex flex-column text-neutral-80 h-100">
+                <li>
+                  <a href="">
+                    <img
+                      src="/assets/images/ic_order.png"
+                      alt="order"
+                      class="me-2 align-bottom"
+                    />訂單管理
+                  </a>
+                </li>
+                <li>
+                  <a href=""
+                    ><span class="material-symbols-outlined align-bottom me-2">
+                      favorite </span
+                    >我的收藏</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="/assets/images/ic_setting.png"
+                      alt="setting"
+                      class="align-bottom me-2"
+                    />帳號設定</a
+                  >
+                </li>
+
+                <li class="mt-auto">
+                  <span
+                    class="material-symbols-outlined text-neutral-60 align-bottom me-2"
+                  >
+                    move_item
+                  </span>
+                  登出
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
