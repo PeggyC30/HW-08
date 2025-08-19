@@ -34,11 +34,127 @@
     max-width: 416px;
     height: 600px;
     transition: width 0.3s;
+    button {
+      display: none;
+    }
     &:hover {
       width: 100%;
       button {
-        display: block !important;
+        display: flex !important;
       }
     }
+  }
+}
+@media (min-width: 992px) {
+  .offset-row {
+    transform: translateX(80px);
+  }
+}
+
+@media (min-width: 992px) {
+  .intro {
+    background-image: url(/assets/images/index/deco-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .intro .card {
+    border-radius: 24px;
+    overflow: hidden;
+  }
+}
+.bg-text {
+  width: 290px;
+  top: 49px;
+  left: -312px;
+}
+.bg-deco-top {
+  height: 40px;
+  background: $primary-10;
+  clip-path: polygon(0 75%, 100% 0, 100% 100%, 0 100%);
+}
+@media (min-width: 992px) {
+  .bg-deco-top {
+    height: 80px;
+  }
+}
+.bg-deco-bottom {
+  height: 40px;
+  background: $primary-10;
+  clip-path: polygon(0 0, 100% 0, 100% 25%, 0 100%);
+}
+@media (min-width: 992px) {
+  .bg-deco-bottom {
+    height: 80px;
+  }
+}
+.map {
+  background-color: $primary-10;
+}
+.bg-text-1 {
+  width: 130px;
+  left: 133px;
+  top: -48px;
+}
+@media (min-width: 992px) {
+  .bg-text-1 {
+    width: 172px;
+    left: 329px;
+    top: -48px;
+  }
+}
+// .map .card {
+//   width: 312px;
+// }
+
+// @media (min-width: 992px) {
+//   .map .card {
+//     width: 746px;
+//   }
+// }
+
+.map .card img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover; /* 保持比例裁切 */
+  object-position: center; /* 以中間為基準 */
+}
+@media (min-width: 992px) {
+  .map .card img {
+    width: 300px;
+    height: 412px;
+    object-fit: cover; /* 保持比例裁切 */
+    object-position: center; /* 以中間為基準 */
+  }
+}
+.poppins-regular-italic-card {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 100px;
+  line-height: 1.2;
+  color: #dfd2cd;
+  position: absolute;
+  left: 16px;
+  top: -40px;
+}
+@media (min-width: 992px) {
+  .poppins-regular-italic-card {
+    font-size: 200px;
+    left: 20px;
+    top: -100px;
+  }
+}
+.swiper {
+  margin-right: calc(-50vw + 50% + 24px);
+}
+
+.swiper-slide {
+  width: 312px;
+}
+
+@media (min-width: 992px) {
+  .swiper-slide {
+    width: 746px;
   }
 }

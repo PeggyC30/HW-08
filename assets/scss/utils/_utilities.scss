@@ -12,6 +12,7 @@
 .subtitle-14-b {
   font-size: 14px;
   font-weight: 700;
+  line-height: 1.5;
 }
 .body-16-r {
   font-size: 16px;
@@ -33,6 +34,11 @@
   .fs-lg-title-16-b {
     font-size: 16px;
     font-weight: 700;
+  }
+}
+@media (min-width: 992px) {
+  .fs-lg-body-16-r {
+    font-size: 16px;
   }
 }
 $utilities: map-merge(
@@ -69,9 +75,9 @@ $utilities: map-merge(
         (
           14: 14px,
           // 會生成 icon-14
-          24: 24px // 會生成 icon-24,,
+          24: 24px // 會生成 icon-24,,,,,
         ),
-      responsive: true // 生成 icon-sm-14 / icon-lg-24 等,,
+      responsive: true // 生成 icon-sm-14 / icon-lg-24 等,,,,,
     ),
   )
 );

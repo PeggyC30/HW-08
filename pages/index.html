@@ -12,6 +12,16 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>ZOBAA!</title>
   </head>
   <body>
@@ -27,7 +37,8 @@
                 ZOBAA 旅行推薦平台
               </h2>
               <h1 class="fs-3 display-lg-2 text-primary-100 mb-2 mb-lg-7">
-                <span class="d-block d-lg-inline-block">用旅行，</span
+                <span class="d-block d-lg-inline-block mb-1 mb-lg-0"
+                  >用旅行，</span
                 ><span>收藏世界的樣子</span>
               </h1>
               <p class="subtitle-14-b text-primary-80 mb-7 mb-lg-10">
@@ -101,7 +112,7 @@
                 精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。
               </p>
               <!-- prettier-ignore -->
-              <button type="button" class="btn btn-light title-16-b p-6 rounded-pill d-flex justify-content-between d-lg-none">訂購行程
+              <button type="button" class="btn btn-light title-16-b p-6 rounded-pill d-flex justify-content-between  d-lg-none">訂購行程
                   <span class="material-icons-outlined ms-2 align-bottom">arrow_forward</span>
                 </button>
             </div>
@@ -171,9 +182,690 @@
           </div>
         </div>
       </section>
+      <section class="intro py-10">
+        <div class="container">
+          <div
+            class="row flex-lg-row-reverse justify-content-between align-items-center"
+          >
+            <div class="col-12 col-lg-4 mb-10 d-lg-flex justify-content-lg-end">
+              <div>
+                <h2 class="fs-3 display-lg-2 text-primary-100 mb-7">
+                  ZOBAA!<br />
+                  踏上旅程的<br />
+                  第一站
+                </h2>
+                <p class="subtitle-14-b fs-lg-6 text-primary-60">
+                  探索最熱門的旅遊主題，<br />
+                  從旅人必備攻略到獨家優惠，<br />
+                  全都為你精挑細選。
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="card border-neutral-40 mb-5">
+                    <img
+                      src="/assets/images/index/intro-1.png"
+                      class="card-img-top"
+                      alt="intro-1"
+                    />
+                    <div class="card-body p-7">
+                      <h3 class="fs-6 mb-2">ZOBAA 專屬推薦行程</h3>
+                      <p class="body-16-r text-neutral-80">
+                        嚴選深度行程，豐富旅行靈感
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card border-neutral-40 mb-5">
+                    <img
+                      src="/assets/images/index/intro-2.png"
+                      class="card-img-top"
+                      alt="intro-2"
+                    />
+                    <div class="card-body p-7">
+                      <h3 class="fs-6 mb-2">旅人攻略集合</h3>
+                      <p class="body-16-r text-neutral-80">
+                        景點、交通、私房景點一次掌握
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row offset-row position-relative">
+                  <div class="col-lg-6">
+                    <div class="card border-neutral-40 mb-5">
+                      <img
+                        src="/assets/images/index/intro-3.png"
+                        class="card-img-top"
+                        alt="intro-3"
+                      />
+                      <div class="card-body p-7">
+                        <h3 class="fs-6 mb-2">優惠機票、酒店</h3>
+                        <p class="body-16-r text-neutral-80">
+                          即時比價，聰明出發不踩雷
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    src="/assets/images/index/deco-text.svg"
+                    alt="text"
+                    class="bg-text d-none d-lg-block position-absolute"
+                  />
+                  <div class="col-lg-6">
+                    <div class="card border-neutral-40 mb-5">
+                      <img
+                        src="/assets/images/index/intro-4.png"
+                        class="card-img-top"
+                        alt="intro-4"
+                      />
+                      <div class="card-body p-7">
+                        <h3 class="fs-6 mb-2">銀行專屬優惠</h3>
+                        <p class="body-16-r text-neutral-80">
+                          使用指定卡別享受獨家旅遊好康
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="2"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="bg-deco-top"></div>
+      <section class="map py-10">
+        <div class="container">
+          <div
+            class="d-lg-flex justify-content-lg-between align-items-lg-center"
+          >
+            <div class="position-relative">
+              <h2 class="fs-3 display-lg-2 text-primary-100 mb-7">
+                <span class="d-block mb-2">今年旅行的</span>
+                <span>靈感地圖</span>
+              </h2>
+              <img
+                src="/assets/images/index/deco-text-1.svg"
+                alt="deco"
+                class="bg-text-1 position-absolute"
+              />
+              <div class="tag d-flex gap-2 mb-7">
+                <button
+                  type="button"
+                  class="btn btn-primary border-0 rounded-3 px-5 py-2 title-16-b"
+                >
+                  全部</button
+                ><button
+                  type="button"
+                  class="btn btn-light border-0 rounded-3 px-5 py-2"
+                >
+                  亞洲</button
+                ><button
+                  type="button"
+                  class="btn btn-light border-0 rounded-3 px-5 py-2"
+                >
+                  歐洲</button
+                ><button
+                  type="button"
+                  class="btn btn-light border-0 rounded-3 px-5 py-2"
+                >
+                  美洲</button
+                ><button
+                  type="button"
+                  class="btn btn-light border-0 rounded-3 px-5 py-2"
+                >
+                  大洋洲</button
+                ><button
+                  type="button"
+                  class="btn btn-light border-0 rounded-3 px-5 py-2"
+                >
+                  非洲
+                </button>
+              </div>
+            </div>
+            <div>
+              <p class="subtitle-14-b fs-lg-6 text-primary-100">
+                來自旅人搜尋、收藏與討論最多的目的地排行榜，<br />
+                一場風格與故事感兼具的靈感旅行，就從這裡開始。
+              </p>
+              <div class="d-lg-flex justify-content-end d-none d-lg-block">
+                <button type="button" class="btn btn-light p-6 me-2">
+                  <span class="material-icons-outlined">
+                    arrow_back
+                  </span></button
+                ><button type="button" class="btn btn-light p-6">
+                  <span class="material-icons-outlined"> arrow_forward </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="container d-flex gap-5 overflow-x-auto pt-10 pt-lg-12">
+          <div class="card border-0 flex-shrink-0">
+            <div class="card-body position-relative d-lg-flex gap-lg-9 px-lg-9">
+              <img
+                src="/assets/images/index/map-1.png"
+                class="card-img-top rounded-4 mb-2"
+                alt="map-1"
+              />
+              <div>
+                <div class="d-flex gap-2 mb-2">
+                  <span
+                    class="badge rounded-3 px-5 py-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10"
+                    >亞洲</span
+                  ><span
+                    class="badge rounded-3 px-5 py-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10"
+                    >日本京都</span
+                  >
+                </div>
+                <h5 class="fs-3 fs-lg-1 mb-2">走進四季交織的文化時光</h5>
+                <p class="body2-14-r fs-lg-body-16-r mb-7 mb-lg-10">
+                  穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。
+                </p>
+                <div class="d-lg-flex gap-lg-4 align-items-lg-center mb-lg-10">
+                  <span
+                    class="badge rounded-3 p-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10 mb-2 mb-lg-0"
+                    >ZOBAA 建議</span
+                  >
+                  <p class="body2-14-r mb-7 mb-lg-0">
+                    賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="btn btn-dark subtitle-14-b fs-lg-title-16-b w-100 d-flex px-6 py-5 rounded-pill align-items-center"
+                  >立即探索魅力古都<span
+                    class="material-icons-outlined align-bottom ms-auto p-1 rounded-circle bg-white text-black"
+                  >
+                    arrow_forward
+                  </span></a
+                >
+              </div>
+              <div class="poppins-regular-italic-card z-5">1</div>
+            </div>
+          </div>
+          <div class="card border-0 flex-shrink-0">
+            <div class="card-body position-relative d-lg-flex gap-lg-9 px-lg-9">
+              <img
+                src="/assets/images/index/map-1.png"
+                class="card-img-top rounded-4 mb-2"
+                alt="map-1"
+              />
+              <div>
+                <div class="d-flex gap-2 mb-2">
+                  <span
+                    class="badge rounded-3 px-5 py-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10"
+                    >亞洲</span
+                  ><span
+                    class="badge rounded-3 px-5 py-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10"
+                    >日本京都</span
+                  >
+                </div>
+                <h5 class="fs-3 fs-lg-1 mb-2">走進四季交織的文化時光</h5>
+                <p class="body2-14-r fs-lg-body-16-r mb-7 mb-lg-10">
+                  穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。
+                </p>
+                <div class="d-lg-flex gap-lg-4 align-items-lg-center mb-lg-10">
+                  <span
+                    class="badge rounded-3 p-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10 mb-2 mb-lg-0"
+                    >ZOBAA 建議</span
+                  >
+                  <p class="body2-14-r mb-7 mb-lg-0">
+                    賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="btn btn-dark subtitle-14-b fs-lg-title-16-b w-100 d-flex px-6 py-5 rounded-pill align-items-center"
+                  >立即探索魅力古都<span
+                    class="material-icons-outlined align-bottom ms-auto p-1 rounded-circle bg-white text-black"
+                  >
+                    arrow_forward
+                  </span></a
+                >
+              </div>
+              <div class="poppins-regular-italic-card z-5">1</div>
+            </div>
+          </div>
+          <div class="card border-0 flex-shrink-0">
+            <div class="card-body position-relative d-lg-flex gap-lg-9 px-lg-9">
+              <img
+                src="/assets/images/index/map-1.png"
+                class="card-img-top rounded-4 mb-2"
+                alt="map-1"
+              />
+              <div>
+                <div class="d-flex gap-2 mb-2">
+                  <span
+                    class="badge rounded-3 px-5 py-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10"
+                    >亞洲</span
+                  ><span
+                    class="badge rounded-3 px-5 py-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10"
+                    >日本京都</span
+                  >
+                </div>
+                <h5 class="fs-3 fs-lg-1 mb-2">走進四季交織的文化時光</h5>
+                <p class="body2-14-r fs-lg-body-16-r mb-7 mb-lg-10">
+                  穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。
+                </p>
+                <div class="d-lg-flex gap-lg-4 align-items-lg-center mb-lg-10">
+                  <span
+                    class="badge rounded-3 p-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10 mb-2 mb-lg-0"
+                    >ZOBAA 建議</span
+                  >
+                  <p class="body2-14-r mb-7 mb-lg-0">
+                    賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="btn btn-dark subtitle-14-b fs-lg-title-16-b w-100 d-flex px-6 py-5 rounded-pill align-items-center"
+                  >立即探索魅力古都<span
+                    class="material-icons-outlined align-bottom ms-auto p-1 rounded-circle bg-white text-black"
+                  >
+                    arrow_forward
+                  </span></a
+                >
+              </div>
+              <div class="poppins-regular-italic-card z-5">1</div>
+            </div>
+          </div>
+          <div class="card border-0 flex-shrink-0">
+            <div class="card-body position-relative d-lg-flex gap-lg-9 px-lg-9">
+              <img
+                src="/assets/images/index/map-1.png"
+                class="card-img-top rounded-4 mb-2"
+                alt="map-1"
+              />
+              <div>
+                <div class="d-flex gap-2 mb-2">
+                  <span
+                    class="badge rounded-3 px-5 py-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10"
+                    >亞洲</span
+                  ><span
+                    class="badge rounded-3 px-5 py-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10"
+                    >日本京都</span
+                  >
+                </div>
+                <h5 class="fs-3 fs-lg-1 mb-2">走進四季交織的文化時光</h5>
+                <p class="body2-14-r fs-lg-body-16-r mb-7 mb-lg-10">
+                  穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。
+                </p>
+                <div class="d-lg-flex gap-lg-4 align-items-lg-center mb-lg-10">
+                  <span
+                    class="badge rounded-3 p-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10 mb-2 mb-lg-0"
+                    >ZOBAA 建議</span
+                  >
+                  <p class="body2-14-r mb-7 mb-lg-0">
+                    賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="btn btn-dark subtitle-14-b fs-lg-title-16-b w-100 d-flex px-6 py-5 rounded-pill align-items-center"
+                  >立即探索魅力古都<span
+                    class="material-icons-outlined align-bottom ms-auto p-1 rounded-circle bg-white text-black"
+                  >
+                    arrow_forward
+                  </span></a
+                >
+              </div>
+              <div class="poppins-regular-italic-card z-5">1</div>
+            </div>
+          </div>
+          <div class="card border-0 flex-shrink-0">
+            <div class="card-body position-relative d-lg-flex gap-lg-9 px-lg-9">
+              <img
+                src="/assets/images/index/map-1.png"
+                class="card-img-top rounded-4 mb-2"
+                alt="map-1"
+              />
+              <div>
+                <div class="d-flex gap-2 mb-2">
+                  <span
+                    class="badge rounded-3 px-5 py-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10"
+                    >亞洲</span
+                  ><span
+                    class="badge rounded-3 px-5 py-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10"
+                    >日本京都</span
+                  >
+                </div>
+                <h5 class="fs-3 fs-lg-1 mb-2">走進四季交織的文化時光</h5>
+                <p class="body2-14-r fs-lg-body-16-r mb-7 mb-lg-10">
+                  穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。
+                </p>
+                <div class="d-lg-flex gap-lg-4 align-items-lg-center mb-lg-10">
+                  <span
+                    class="badge rounded-3 p-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10 mb-2 mb-lg-0"
+                    >ZOBAA 建議</span
+                  >
+                  <p class="body2-14-r mb-7 mb-lg-0">
+                    賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="btn btn-dark subtitle-14-b fs-lg-title-16-b w-100 d-flex px-6 py-5 rounded-pill align-items-center"
+                  >立即探索魅力古都<span
+                    class="material-icons-outlined align-bottom ms-auto p-1 rounded-circle bg-white text-black"
+                  >
+                    arrow_forward
+                  </span></a
+                >
+              </div>
+              <div class="poppins-regular-italic-card z-5">1</div>
+            </div>
+          </div>
+        </div> -->
+        <div class="container">
+          <div class="swiper pt-10 pt-lg-12">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="card border-0">
+                  <div
+                    class="card-body position-relative d-lg-flex gap-lg-9 px-lg-9"
+                  >
+                    <img
+                      src="/assets/images/index/map-1.png"
+                      class="card-img-top rounded-4 mb-2"
+                      alt="map-1"
+                    />
+                    <div>
+                      <div class="d-flex gap-2 mb-2">
+                        <span
+                          class="badge rounded-3 px-5 py-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10"
+                          >亞洲</span
+                        ><span
+                          class="badge rounded-3 px-5 py-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10"
+                          >日本京都</span
+                        >
+                      </div>
+                      <h5 class="fs-3 fs-lg-1 mb-2">走進四季交織的文化時光</h5>
+                      <p class="body2-14-r fs-lg-body-16-r mb-7 mb-lg-10">
+                        穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。
+                      </p>
+                      <div
+                        class="d-lg-flex gap-lg-4 align-items-lg-center mb-lg-10"
+                      >
+                        <span
+                          class="badge rounded-3 p-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10 mb-2 mb-lg-0"
+                          >ZOBAA 建議</span
+                        >
+                        <p class="body2-14-r mb-7 mb-lg-0">
+                          賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁
+                        </p>
+                      </div>
+                      <a
+                        href="#"
+                        class="btn btn-dark subtitle-14-b fs-lg-title-16-b w-100 d-flex px-6 py-5 rounded-pill align-items-center"
+                        >立即探索魅力古都<span
+                          class="material-icons-outlined align-bottom ms-auto p-1 rounded-circle bg-white text-black"
+                        >
+                          arrow_forward
+                        </span></a
+                      >
+                    </div>
+                    <div class="poppins-regular-italic-card z-5">1</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0 flex-shrink-0">
+                  <div
+                    class="card-body position-relative d-lg-flex gap-lg-9 px-lg-9"
+                  >
+                    <img
+                      src="/assets/images/index/map-2.png"
+                      class="card-img-top rounded-4 mb-2"
+                      alt="map-2"
+                    />
+                    <div>
+                      <div class="d-flex gap-2 mb-2">
+                        <span
+                          class="badge rounded-3 px-5 py-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10"
+                          >亞洲</span
+                        ><span
+                          class="badge rounded-3 px-5 py-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10"
+                          >南韓首爾</span
+                        >
+                      </div>
+                      <h5 class="fs-3 fs-lg-1 mb-2">從街邊美食到韓劇場景</h5>
+                      <p class="body2-14-r fs-lg-body-16-r mb-7 mb-lg-10">
+                        白天在弘大小巷探店，夜晚登上南山塔俯瞰整座城市的閃爍。
+                      </p>
+                      <div
+                        class="d-lg-flex gap-lg-4 align-items-lg-center mb-lg-10"
+                      >
+                        <span
+                          class="badge rounded-3 p-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10 mb-2 mb-lg-0"
+                          >ZOBAA 建議</span
+                        >
+                        <p class="body2-14-r mb-7 mb-lg-0">
+                          弘大周邊週五傍晚最熱鬧，小吃與街頭藝人齊發✨
+                        </p>
+                      </div>
+                      <a
+                        href="#"
+                        class="btn btn-dark subtitle-14-b fs-lg-title-16-b w-100 d-flex px-6 py-5 rounded-pill align-items-center"
+                        >感受韓系風格日常<span
+                          class="material-icons-outlined align-bottom ms-auto p-1 rounded-circle bg-white text-black"
+                        >
+                          arrow_forward
+                        </span></a
+                      >
+                    </div>
+                    <div class="poppins-regular-italic-card z-5">2</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0 flex-shrink-0">
+                  <div
+                    class="card-body position-relative d-lg-flex gap-lg-9 px-lg-9"
+                  >
+                    <img
+                      src="/assets/images/index/map-3.png"
+                      class="card-img-top rounded-4 mb-2"
+                      alt="map-3"
+                    />
+                    <div>
+                      <div class="d-flex gap-2 mb-2">
+                        <span
+                          class="badge rounded-3 px-5 py-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10"
+                          >歐洲</span
+                        ><span
+                          class="badge rounded-3 px-5 py-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10"
+                          >法國巴黎</span
+                        >
+                      </div>
+                      <h5 class="fs-3 fs-lg-1 mb-2">在藝術與咖啡香中迷路</h5>
+                      <p class="body2-14-r fs-lg-body-16-r mb-7 mb-lg-10">
+                        穿梭左岸書店與畫廊，任由麵包香與建築細節擁抱你的步伐。
+                      </p>
+                      <div
+                        class="d-lg-flex gap-lg-4 align-items-lg-center mb-lg-10"
+                      >
+                        <span
+                          class="badge rounded-3 p-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10 mb-2 mb-lg-0"
+                          >ZOBAA 建議</span
+                        >
+                        <p class="body2-14-r mb-7 mb-lg-0">
+                          走進瑪黑區，最容易與巴黎風格不期而遇 ☕️
+                        </p>
+                      </div>
+                      <a
+                        href="#"
+                        class="btn btn-dark subtitle-14-b fs-lg-title-16-b w-100 d-flex px-6 py-5 rounded-pill align-items-center"
+                        >立即探索魅力古都<span
+                          class="material-icons-outlined align-bottom ms-auto p-1 rounded-circle bg-white text-black"
+                        >
+                          arrow_forward
+                        </span></a
+                      >
+                    </div>
+                    <div class="poppins-regular-italic-card z-5">3</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0 flex-shrink-0">
+                  <div
+                    class="card-body position-relative d-lg-flex gap-lg-9 px-lg-9"
+                  >
+                    <img
+                      src="/assets/images/index/map-4.png"
+                      class="card-img-top rounded-4 mb-2"
+                      alt="map-4"
+                    />
+                    <div>
+                      <div class="d-flex gap-2 mb-2">
+                        <span
+                          class="badge rounded-3 px-5 py-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10"
+                          >大洋洲</span
+                        ><span
+                          class="badge rounded-3 px-5 py-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10"
+                          >澳洲雪梨</span
+                        >
+                      </div>
+                      <h5 class="fs-3 fs-lg-1 mb-2">城市與大自然的交會</h5>
+                      <p class="body2-14-r fs-lg-body-16-r mb-7 mb-lg-10">
+                        清晨在海灘做瑜珈，午後漫步歌劇院，享受城市的節奏與野性的呼喚。
+                      </p>
+                      <div
+                        class="d-lg-flex gap-lg-4 align-items-lg-center mb-lg-10"
+                      >
+                        <span
+                          class="badge rounded-3 p-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10 mb-2 mb-lg-0"
+                          >ZOBAA 建議</span
+                        >
+                        <p class="body2-14-r mb-7 mb-lg-0">
+                          別錯過傍晚在雪梨港看日落＋欣賞歌劇院夜燈 ✨
+                        </p>
+                      </div>
+                      <a
+                        href="#"
+                        class="btn btn-dark subtitle-14-b fs-lg-title-16-b w-100 d-flex px-6 py-5 rounded-pill align-items-center"
+                        >立即探索魅力古都<span
+                          class="material-icons-outlined align-bottom ms-auto p-1 rounded-circle bg-white text-black"
+                        >
+                          arrow_forward
+                        </span></a
+                      >
+                    </div>
+                    <div class="poppins-regular-italic-card z-5">4</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0 flex-shrink-0">
+                  <div
+                    class="card-body position-relative d-lg-flex gap-lg-9 px-lg-9"
+                  >
+                    <img
+                      src="/assets/images/index/map-5.png"
+                      class="card-img-top rounded-4 mb-2"
+                      alt="map-5"
+                    />
+                    <div>
+                      <div class="d-flex gap-2 mb-2">
+                        <span
+                          class="badge rounded-3 px-5 py-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10"
+                          >非洲</span
+                        ><span
+                          class="badge rounded-3 px-5 py-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10"
+                          >埃及開羅</span
+                        >
+                      </div>
+                      <h5 class="fs-3 fs-lg-1 mb-2">穿越千年時光的沙漠冒險</h5>
+                      <p class="body2-14-r fs-lg-body-16-r mb-7 mb-lg-10">
+                        乘著駱駝走過古老遺跡，抬頭仰望太陽神的光芒，在歷史與傳說之間迷失。
+                      </p>
+                      <div
+                        class="d-lg-flex gap-lg-4 align-items-lg-center mb-lg-10"
+                      >
+                        <span
+                          class="badge rounded-3 p-2 subtitle-14-b fs-lg-title-16-b text-primary-100 bg-primary-10 mb-2 mb-lg-0"
+                          >ZOBAA 建議</span
+                        >
+                        <p class="body2-14-r mb-7 mb-lg-0">
+                          建議早上 8 點前到吉薩金字塔，避開人潮與烈日 ☀️
+                        </p>
+                      </div>
+                      <a
+                        href="#"
+                        class="btn btn-dark subtitle-14-b fs-lg-title-16-b w-100 d-flex px-6 py-5 rounded-pill align-items-center"
+                        >立即探索魅力古都<span
+                          class="material-icons-outlined align-bottom ms-auto p-1 rounded-circle bg-white text-black"
+                        >
+                          arrow_forward
+                        </span></a
+                      >
+                    </div>
+                    <div class="poppins-regular-italic-card z-5">5</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+        <!-- Slider main container -->
+      </section>
+      <div class="bg-deco-bottom"></div>
     </main>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: "auto", // 讓每張依照內容寬度顯示
+        spaceBetween: 16, // 卡片間距
+        breakpoints: {
+          // RWD 設定
+
+          992: {
+            // >= 992px
+
+            spaceBetween: 24,
+          },
+        },
+        centeredSlides: false, // 不要置中（避免左右空白）
+        autoplay: {
+          delay: 1000,
+        },
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
   </body>
 </html>
