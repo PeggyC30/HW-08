@@ -1120,32 +1120,33 @@
       const swiper3 = new Swiper(".swiper-3", {
         // Optional parameters
         direction: "horizontal",
-        loop: true,
+        loop: false,
+
         slidesPerView: "auto", // 讓每張依照內容寬度顯示
         spaceBetween: 16, // 卡片間距
         breakpoints: {
-          576: {
-            slidesPerView: 2.2,
-          },
           0: {
             slidesPerView: 1,
           },
+          576: {
+            slidesPerView: 2.2,
+          },
         },
-        // If we need pagination
-        pagination: {
-          el: ".swiper-pagination",
-        },
+        // // If we need pagination
+        // pagination: {
+        //   el: ".swiper-pagination",
+        // },
 
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+        // // Navigation arrows
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
 
-        // And if we need scrollbar
-        scrollbar: {
-          el: ".swiper-scrollbar",
-        },
+        // // And if we need scrollbar
+        // scrollbar: {
+        //   el: ".swiper-scrollbar",
+        // },
       });
       const swiper4 = new Swiper(".swiper-4", {
         // Optional parameters
