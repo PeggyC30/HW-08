@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>OSAKA!</title>
+    <script type="module" crossorigin src="/HW-08/assets/main-CG-x2VIf.js"></script>
+    <link rel="stylesheet" crossorigin href="/HW-08/assets/main-CqeqDV5p.css">
+  </head>
+  <body>
+    <nav class="navbar bg-white py-4 fixed-top">
+    <div class="container position-relative">
+      <div class="d-flex align-items-center me-auto gap-7">
+        <a class="navbar-brand p-0" href="index"
+          ><img src="data:image/png;base64,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" alt="logo"
+        /></a>
+        <form action="" class="position-relative d-none d-lg-block">
+          <span
+            class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60"
+          >
+            search
+          </span>
+          <input
+            type="search"
+            class="naebar-lg-search form-control rounded-3 py-2 ps-10"
+            id="naebar-lg-search"
+            placeholder="搜尋景點、地點或城市"
+          />
+        </form>
+      </div>
+      <div
+        class="collapse position-absolute start-0 end-0 px-4 bg-white z-1"
+        id="collapseExample"
+      >
+        <div class="d-flex align-items-center">
+          <form action="" class="position-relative w-100">
+            <span
+              class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60"
+            >
+              search
+            </span>
+            <input
+              type="search"
+              class="form-control rounded-3 py-2 ps-10"
+              id="exampleFormControlInput1"
+              placeholder="搜尋景點、地點或城市"
+            />
+          </form>
+          <button
+            type="button"
+            class="btn p-2 border-0"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseExample"
+          >
+            <span class="material-icons-outlined text-neutral-80"> close </span>
+          </button>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="btn py-0 p-2 border-0 d-lg-none"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseExample"
+      >
+        <span class="material-icons-outlined align-bottom text-neutral-80">
+          search
+        </span>
+      </button>
+      <a href="#" class="btn py-2 border-0 me-lg-5">
+        <span class="position-relative">
+          <span
+            class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-alert cart-tag p-0"
+            >2</span
+          >
+          <span class="material-icons-outlined align-bottom text-neutral-80">
+            shopping_cart
+          </span>
+        </span>
+      </a>
+      <a
+        href=""
+        class="btn btn-primary d-none d-lg-block"
+        class="d-lg-flex gap-2 d-none d-lg-block"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation"
+        >登入 / 註冊</a
+      >
+      <a
+        href=""
+        class="d-lg-flex gap-2 d-none d-lg-block"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar-user"
+        aria-controls="offcanvasNavbar-user"
+        aria-label="Toggle navigation"
+        ><img
+          src="/HW-08/assets/avatar-1-cp2HwrEX.png"
+          alt="user"
+          class="user-img"
+        />
+        <p class="title-16-b text-primary-100">Jessica</p></a
+      >
+
+      <button
+        class="btn py-0 border-0 d-lg-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar-user"
+        aria-controls="offcanvasNavbar-user"
+        aria-label="Toggle navigation"
+      >
+        <span class="material-icons py-2 text-neutral-80"> menu </span>
+      </button>
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <div class="pt-11 px-7 pb-7 position-relative h-100">
+          <button
+            type="button"
+            class="btn position-absolute top-0 end-0 mt-7 me-7 p-0"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <span class="material-icons-outlined text-neutral-80"> close </span>
+          </button>
+          <div class="body d-flex flex-column h-100">
+            <div
+              class="d-flex gap-2 align-items-center pb-5 border-bottom border-neutral-40"
+            >
+              <span
+                class="material-icons-outlined bg-primary-40 text-white rounded-circle p-1"
+              >
+                account_circle
+              </span>
+              <div>
+                <h5 class="title-16-b text-primary-100">訪客</h5>
+                <p class="body-16-r text-neutral-80">未登入</p>
+              </div>
+            </div>
+            <div class="pt-7">
+              <h4 class="fs-6 text-primary-100 mb-1">歡迎來到 ZOBAA</h4>
+              <p class="body-16-r text-neutral-80">
+                加入會員即可立即訂購、收藏行程，並享相關優惠好禮。
+              </p>
+            </div>
+            <a href="user" class="btn btn-primary w-100 mt-auto">登入 / 註冊</a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasNavbar-user"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <div class="pt-11 px-7 pb-7 position-relative h-100">
+          <button
+            type="button"
+            class="btn position-absolute top-0 end-0 mt-7 me-7 p-0"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <span class="material-icons-outlined text-neutral-80"> close </span>
+          </button>
+          <div class="body d-flex flex-column h-100">
+            <div
+              class="d-flex gap-2 align-items-center pb-5 border-bottom border-neutral-40"
+            >
+              <img
+                src="/HW-08/assets/avatar-1-cp2HwrEX.png"
+                alt="user"
+                class="user-img"
+              />
+
+              <div>
+                <h5 class="title-16-b text-primary-100">Jessica</h5>
+                <p class="body-16-r text-neutral-80">jessica.yen@gamil.com</p>
+              </div>
+            </div>
+            <div class="pt-5 h-100">
+              <ul class="d-flex flex-column text-neutral-80 h-100">
+                <li>
+                  <a href="">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB4SURBVHgB7ZXRDYAgDEQvLqKbdgRGZATdQDGRaIxCj5Qf4CUXfmivtAkFBoVI0Bq0K3Xeddrkjkj8lmgMYuUz9Cy4X5IlVsPyGTehMhoDj/+eewsDc8YMaANz+phBtveMgTnVZ7BdJ/ubPmOTCMr3AbV02I0maJIDDgpjLYh59GYAAAAASUVORK5CYII="
+                      alt="order"
+                      class="me-2 align-bottom"
+                    />訂單管理
+                  </a>
+                </li>
+                <li>
+                  <a href=""
+                    ><span class="material-symbols-outlined align-bottom me-2">
+                      favorite </span
+                    >我的收藏</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE0SURBVHgB5VXbkYMwDNy5CrgK4g6gA18HKSElUAIlUIJLuOuAElKCrwPSQUJmrGERsiGPv+yMhgSv5ZUsCeATUE82TnZV1uJNCIbzu0U8iWqyA/2OyWFDHInIE6/GDjhSOJIjrbYjTsQDabPSESkikOKgxMizyjk/KYdViqgER5wh7e9zZAn1lDn8TAK6zGES0eo+KlrUmzvYVTQUDjjCQEsEb2ySC2wwR8uO5F02RUiLTDpm1IqYkP57ZHrjC2V8b6xf0lMq579E5hQ1tFFKsCW1uiC4IYPlvHTJfHDpkmtDzAKxsMhlOiYRuqEc1hlYwGPZjQdszxeeWwGFFAkG7B8Vv1iPiqvBXcDBHnZnxethD7sOO+AwzxeuIk8ccfpDvAZPoscLH5ytRrvjD3ND6fcfgBuq8Jt6NxnUVgAAAABJRU5ErkJggg=="
+                      alt="setting"
+                      class="align-bottom me-2"
+                    />帳號設定</a
+                  >
+                </li>
+
+                <li class="mt-auto">
+                  <span
+                    class="material-symbols-outlined text-neutral-60 align-bottom me-2"
+                  >
+                    move_item
+                  </span>
+                  登出
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+    <main>
+      <section class="osaka">
+        <div class="container">
+          <h1 class="fs-3 fs-lg-1 mb-2 text-primary-100">大阪</h1>
+          <p class="body2-14-r fs-lg-body-16-r mb-7">
+            大阪，一座融合傳統與現代的城市，擁有豐富的歷史文化、熱鬧的購物街區與世界知名的美食天堂。從氣派的大阪城到霓虹閃爍的道頓堀，每一處都充滿驚喜。無論是第一次造訪，還是再次回味，大阪總能用它的熱情與魅力，讓你留下難忘回憶。
+          </p>
+
+          <!-- Slider main container -->
+          <div class="swiper swiper-3 d-xl-none position-relative">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="/HW-08/assets/osaka-1-Bw3FKaVU.png" alt="osaka-1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/HW-08/assets/osaka-2-CtHaeKfc.png" alt="osaka-2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/HW-08/assets/osaka-3-pt68zYMA.png" alt="osaka-3" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/HW-08/assets/osaka-4-BqiQxOYh.png" alt="osaka-4" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/HW-08/assets/osaka-5-BS0LFxR5.png" alt="osaka-5" />
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need scrollbar -->
+            <button
+              type="button"
+              class="btn bg-white border-primary-100 px-9 py-5 position-absolute"
+            >
+              查看更多
+            </button>
+          </div>
+
+          <div class="container d-none d-xl-block position-relative">
+            <div
+              class="row gx-2 align-items-stretch overflow-hidden"
+              style="border-radius: 24px"
+            >
+              <div class="col-xl-7">
+                <img src="/HW-08/assets/osaka-1-Bw3FKaVU.png" alt="1" />
+              </div>
+              <div class="col-xl-5">
+                <div class="row gx-2 h-100">
+                  <div class="col-xl-6 mb-2">
+                    <img src="/HW-08/assets/osaka-2-CtHaeKfc.png" alt="2" />
+                  </div>
+                  <div class="col-xl-6 mb-2">
+                    <img src="/HW-08/assets/osaka-3-pt68zYMA.png" alt="3" />
+                  </div>
+                  <div class="col-xl-6">
+                    <img src="/HW-08/assets/osaka-4-BqiQxOYh.png" alt="4" />
+                  </div>
+                  <div class="col-xl-6">
+                    <img src="/HW-08/assets/osaka-5-BS0LFxR5.png" alt="5" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn bg-white border-primary-100 px-9 py-5 position-absolute"
+            >
+              查看更多
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="popular-categories py-10 py-lg-12">
+        <div class="container">
+          <h2 class="fs-3 fs-lg-1 mb-6 mb-lg-10 text-primary-100">
+            <span class="d-block d-lg-inline-block">想怎麼玩大阪？</span
+            ><span>熱門分類快速選！</span>
+          </h2>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="categories-card col-6 col-lg-3">
+              <div class="rounded-2 border neutral-40 overflow-hidden">
+                <div
+                  class="bg-primary-10 d-flex justify-content-center align-items-center py-6"
+                >
+                  <img
+                    src="/HW-08/assets/category-1-B2Np6K8V.svg"
+                    alt="1"
+                    class="categories-img"
+                  />
+                </div>
+                <div class="p-5 p-lg-7">
+                  <h3 class="title-16-b me-2">交通優惠</h3>
+                  <p class="body2-14-r text-neutral-80">20+ 種選擇</p>
+                </div>
+              </div>
+            </div>
+            <div class="categories-card col-6 col-lg-3 mb-5">
+              <div class="rounded-2 border neutral-40 overflow-hidden">
+                <div
+                  class="bg-primary-10 d-flex justify-content-center align-items-center py-6"
+                >
+                  <img
+                    src="/HW-08/assets/category-2-DPpVyYSC.svg"
+                    alt="2"
+                    class="categories-img"
+                  />
+                </div>
+                <div class="p-5 p-lg-7">
+                  <h3 class="title-16-b me-2">一日遊</h3>
+                  <p class="body2-14-r text-neutral-80">50+ 種選擇</p>
+                </div>
+              </div>
+            </div>
+            <div class="categories-card col-6 col-lg-3">
+              <div class="rounded-2 border neutral-40 overflow-hidden">
+                <div
+                  class="bg-primary-10 d-flex justify-content-center align-items-center py-6"
+                >
+                  <img
+                    src="/HW-08/assets/category-3-D7sBWS6O.svg"
+                    alt="3"
+                    class="categories-img"
+                  />
+                </div>
+                <div class="p-5 p-lg-7">
+                  <h3 class="title-16-b me-2">景點門票</h3>
+                  <p class="body2-14-r text-neutral-80">70+ 種選擇</p>
+                </div>
+              </div>
+            </div>
+            <div class="categories-card col-6 col-lg-3">
+              <div class="rounded-2 border neutral-40 overflow-hidden">
+                <div
+                  class="bg-primary-10 d-flex justify-content-center align-items-center py-6"
+                >
+                  <img
+                    src="/HW-08/assets/category-4-DH1VH0xV.svg"
+                    alt="4"
+                    class="categories-img"
+                  />
+                </div>
+                <div class="p-5 p-lg-7">
+                  <h3 class="title-16-b me-2">美食餐廳</h3>
+                  <p class="body2-14-r text-neutral-80">80+ 種選擇</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="top-10 py-10 py-lg-12">
+        <div class="container">
+          <h2 class="fs-3 fs-lg-1 mb-6 mb-lg-10 text-primary-100">
+            大阪 TOP 10!
+          </h2>
+        </div>
+        <div class="container position-relative">
+          <!-- Slider main container -->
+          <div class="swiper swiper-4">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide d-flex">
+                <div
+                  class="card position-relative border-0 d-flex flex-column h-100"
+                >
+                  <div class="img-wrapper mb-5">
+                    <img
+                      src="/HW-08/assets/top-1-DLY_45Sw.png"
+                      class="card-img-top"
+                      alt="top-1"
+                    />
+                  </div>
+                  <button
+                    type="button"
+                    class="position-absolute end-0 p-5 text-white heart-bg-radius border-0"
+                  >
+                    <span class="material-icons-outlined">
+                      favorite_border
+                    </span>
+                  </button>
+                  <div class="pb-5 border-bottom border-neutral-40">
+                    <h4 class="title-16-b mb-2">
+                      環球影城超值一日遊｜哈利波特園區＋快速通關體驗
+                    </h4>
+                    <div class="mb-2">
+                      <span
+                        class="badge bg-primary-10 text-primary-100 py-1 px-2 rounded-3 body2-14-r me-2"
+                        >即買即用</span
+                      ><span
+                        class="badge bg-primary-10 text-primary-100 py-1 px-2 rounded-3 body2-14-r"
+                        >5 天前可免費取消</span
+                      >
+                    </div>
+                    <div>
+                      <img
+                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20enable-background='new%200%200%2024%2024'%20height='20px'%20viewBox='0%200%2024%2024'%20width='20px'%20fill='%23F6BD2B'%3e%3cg%3e%3cpath%20d='M0%200h24v24H0V0z'%20fill='none'/%3e%3cpath%20d='M0%200h24v24H0V0z'%20fill='none'/%3e%3c/g%3e%3cg%3e%3cpath%20d='M12%2017.27%2018.18%2021l-1.64-7.03L22%209.24l-7.19-.61L12%202%209.19%208.63%202%209.24l5.46%204.73L5.82%2021%2012%2017.27z'/%3e%3c/g%3e%3c/svg%3e"
+                        alt="star"
+                        class="me-1"
+                      /><span class="body2-14-r text-neutral-80 me-1">4.8</span
+                      ><span
+                        class="body2-14-r text-neutral-60 pe-4 border-end border-neutral-40"
+                        >(1029)</span
+                      ><span class="body2-14-r text-neutral-80 ps-4"
+                        >1,000+ 個已訂購</span
+                      >
+                    </div>
+                  </div>
+                  <div class="pt-5">
+                    <h5 class="fs-6 text-primary-100">NT$ 5,480</h5>
+                    <span
+                      class="text-decoration-line-through body2-14-r gray808080"
+                      >NT$ 6,200</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide d-flex">
+                <div
+                  class="card position-relative border-0 d-flex flex-column h-100"
+                >
+                  <div class="img-wrapper mb-5">
+                    <img
+                      src="/HW-08/assets/top-2-DLkjmVc3.png"
+                      class="card-img-top"
+                      alt="top-2"
+                    />
+                  </div>
+                  <button
+                    type="button"
+                    class="position-absolute end-0 p-5 text-white heart-bg-radius border-0"
+                  >
+                    <span class="material-icons-outlined">
+                      favorite_border
+                    </span>
+                  </button>
+
+                  <h4 class="title-16-b mb-2">
+                    奈良梅花鹿餵食體驗＋和服散策｜日式風情輕旅行
+                  </h4>
+
+                  <div class="mb-2">
+                    <span
+                      class="badge bg-primary-10 text-primary-100 py-1 px-2 rounded-3 body2-14-r me-2"
+                      >中文導覽</span
+                    ><span
+                      class="badge bg-primary-10 text-primary-100 py-1 px-2 rounded-3 body2-14-r"
+                      >5 天前可免費取消</span
+                    >
+                  </div>
+                  <div class="pb-5 border-bottom border-neutral-40">
+                    <img
+                      src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20enable-background='new%200%200%2024%2024'%20height='20px'%20viewBox='0%200%2024%2024'%20width='20px'%20fill='%23F6BD2B'%3e%3cg%3e%3cpath%20d='M0%200h24v24H0V0z'%20fill='none'/%3e%3cpath%20d='M0%200h24v24H0V0z'%20fill='none'/%3e%3c/g%3e%3cg%3e%3cpath%20d='M12%2017.27%2018.18%2021l-1.64-7.03L22%209.24l-7.19-.61L12%202%209.19%208.63%202%209.24l5.46%204.73L5.82%2021%2012%2017.27z'/%3e%3c/g%3e%3c/svg%3e"
+                      alt="star"
+                      class="me-1"
+                    /><span class="body2-14-r text-neutral-80 me-1">4.7</span
+                    ><span
+                      class="body2-14-r text-neutral-60 pe-4 border-end border-neutral-40"
+                      >(880)</span
+                    ><span class="body2-14-r text-neutral-80 ps-4"
+                      >900+ 個已訂購</span
+                    >
+                  </div>
+
+                  <div class="pt-5">
+                    <h5 class="fs-6 text-primary-100">NT$ 2,250</h5>
+                    <span
+                      class="text-decoration-line-through body2-14-r gray808080"
+                      >NT$ 2,800</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide d-flex">
+                <div
+                  class="card position-relative border-0 d-flex flex-column h-100"
+                >
+                  <div class="img-wrapper mb-5">
+                    <img
+                      src="/HW-08/assets/top-3-Ba63bpk4.png"
+                      class="card-img-top"
+                      alt="top-3"
+                    />
+                  </div>
+                  <button
+                    type="button"
+                    class="position-absolute end-0 p-5 text-white heart-bg-radius border-0"
+                  >
+                    <span class="material-icons-outlined">
+                      favorite_border
+                    </span>
+                  </button>
+                  <div class="pb-5 border-bottom border-neutral-40">
+                    <h4 class="title-16-b mb-2">
+                      黑門市場美食巡禮｜在地職人帶路吃遍大阪經典小吃
+                    </h4>
+                    <div class="mb-2">
+                      <span
+                        class="badge bg-primary-10 text-primary-100 py-1 px-2 rounded-3 body2-14-r me-2"
+                        >專業導覽</span
+                      ><span
+                        class="badge bg-primary-10 text-primary-100 py-1 px-2 rounded-3 body2-14-r"
+                        >5 天前可免費取消</span
+                      >
+                    </div>
+                    <div>
+                      <img
+                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20enable-background='new%200%200%2024%2024'%20height='20px'%20viewBox='0%200%2024%2024'%20width='20px'%20fill='%23F6BD2B'%3e%3cg%3e%3cpath%20d='M0%200h24v24H0V0z'%20fill='none'/%3e%3cpath%20d='M0%200h24v24H0V0z'%20fill='none'/%3e%3c/g%3e%3cg%3e%3cpath%20d='M12%2017.27%2018.18%2021l-1.64-7.03L22%209.24l-7.19-.61L12%202%209.19%208.63%202%209.24l5.46%204.73L5.82%2021%2012%2017.27z'/%3e%3c/g%3e%3c/svg%3e"
+                        alt="star"
+                        class="me-1"
+                      /><span class="body2-14-r text-neutral-80 me-1">4.6</span
+                      ><span
+                        class="body2-14-r text-neutral-60 pe-4 border-end border-neutral-40"
+                        >(540)</span
+                      ><span class="body2-14-r text-neutral-80 ps-4"
+                        >700+ 個已訂購</span
+                      >
+                    </div>
+                  </div>
+                  <div class="pt-5">
+                    <h5 class="fs-6 text-primary-100">NT$ 1,580</h5>
+                    <span
+                      class="text-decoration-line-through body2-14-r gray808080"
+                      >NT$ 2,500</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide d-flex">
+                <div
+                  class="card position-relative border-0 d-flex flex-column h-100"
+                >
+                  <div class="img-wrapper mb-5">
+                    <img
+                      src="/HW-08/assets/top-4-FDuWEWBq.png"
+                      class="card-img-top"
+                      alt="top-4"
+                    />
+                  </div>
+                  <button
+                    type="button"
+                    class="position-absolute end-0 p-5 text-white heart-bg-radius border-0"
+                  >
+                    <span class="material-icons-outlined">
+                      favorite_border
+                    </span>
+                  </button>
+                  <div class="pb-5 border-bottom border-neutral-40">
+                    <h4 class="title-16-b mb-2">
+                      大阪夜景直升機體驗｜空中俯瞰梅田摩天輪＋海遊館
+                    </h4>
+                    <div class="mb-2">
+                      <span
+                        class="badge bg-primary-10 text-primary-100 py-1 px-2 rounded-3 body2-14-r me-2"
+                        >即買即用</span
+                      ><span
+                        class="badge bg-primary-10 text-primary-100 py-1 px-2 rounded-3 body2-14-r"
+                        >7 天前可免費取消</span
+                      >
+                    </div>
+                    <div>
+                      <img
+                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20enable-background='new%200%200%2024%2024'%20height='20px'%20viewBox='0%200%2024%2024'%20width='20px'%20fill='%23F6BD2B'%3e%3cg%3e%3cpath%20d='M0%200h24v24H0V0z'%20fill='none'/%3e%3cpath%20d='M0%200h24v24H0V0z'%20fill='none'/%3e%3c/g%3e%3cg%3e%3cpath%20d='M12%2017.27%2018.18%2021l-1.64-7.03L22%209.24l-7.19-.61L12%202%209.19%208.63%202%209.24l5.46%204.73L5.82%2021%2012%2017.27z'/%3e%3c/g%3e%3c/svg%3e"
+                        alt="star"
+                        class="me-1"
+                      /><span class="body2-14-r text-neutral-80 me-1">4.7</span
+                      ><span
+                        class="body2-14-r text-neutral-60 pe-4 border-end border-neutral-40"
+                        >(319)</span
+                      ><span class="body2-14-r text-neutral-80 ps-4"
+                        >600+ 個已訂購</span
+                      >
+                    </div>
+                  </div>
+                  <div class="pt-5">
+                    <h5 class="fs-6 text-primary-100">NT$ 6,890</h5>
+                    <span
+                      class="text-decoration-line-through body2-14-r gray808080"
+                      >NT$ 8,890</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+          </div>
+          <button
+            type="button"
+            class="btn position-absolute arrow_back d-none d-xxl-block"
+          >
+            <span class="material-icons-outlined p-5 shadow-sm">
+              arrow_back
+            </span>
+          </button>
+          <button
+            type="button"
+            class="btn position-absolute arrow_forward d-none d-xxl-block"
+          >
+            <span class="material-icons-outlined p-5 shadow-sm">
+              arrow_forward
+            </span>
+          </button>
+          <!-- Slider main container -->
+        </div>
+      </section>
+      <section class="recommendation py-10 py-lg-12">
+        <div class="container">
+          <h2 class="fs-3 fs-lg-1 mb-6 mb-lg-10 text-primary-100">
+            <span class="d-block d-lg-inline-block">來自 ZOBAA 的</span>
+            <span>大阪推薦</span>
+          </h2>
+        </div>
+        <div class="container position-relative">
+          <!-- Slider main container -->
+          <div class="swiper swiper-4">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide d-flex">
+                <div
+                  class="card position-relative border-0 d-flex flex-column h-100"
+                >
+                  <div class="img-wrapper mb-5">
+                    <img
+                      src="/HW-08/assets/top-1-DLY_45Sw.png"
+                      class="card-img-top"
+                      alt="top-1"
+                    />
+                  </div>
+                  <button
+                    type="button"
+                    class="position-absolute end-0 p-5 text-white heart-bg-radius border-0"
+                  >
+                    <span class="material-icons-outlined">
+                      favorite_border
+                    </span>
+                  </button>
+                  <div class="pb-5 border-bottom border-neutral-40">
+                    <h4 class="title-16-b mb-2">
+                      環球影城超值一日遊｜哈利波特園區＋快速通關體驗
+                    </h4>
+                    <div class="mb-2">
+                      <span
+                        class="badge bg-primary-10 text-primary-100 py-1 px-2 rounded-3 body2-14-r me-2"
+                        >即買即用</span
+                      ><span
+                        class="badge bg-primary-10 text-primary-100 py-1 px-2 rounded-3 body2-14-r"
+                        >5 天前可免費取消</span
+                      >
+                    </div>
+                    <div>
+                      <img
+                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20enable-background='new%200%200%2024%2024'%20height='20px'%20viewBox='0%200%2024%2024'%20width='20px'%20fill='%23F6BD2B'%3e%3cg%3e%3cpath%20d='M0%200h24v24H0V0z'%20fill='none'/%3e%3cpath%20d='M0%200h24v24H0V0z'%20fill='none'/%3e%3c/g%3e%3cg%3e%3cpath%20d='M12%2017.27%2018.18%2021l-1.64-7.03L22%209.24l-7.19-.61L12%202%209.19%208.63%202%209.24l5.46%204.73L5.82%2021%2012%2017.27z'/%3e%3c/g%3e%3c/svg%3e"
+                        alt="star"
+                        class="me-1"
+                      /><span class="body2-14-r text-neutral-80 me-1">4.8</span
+                      ><span
+                        class="body2-14-r text-neutral-60 pe-4 border-end border-neutral-40"
+                        >(1029)</span
+                      ><span class="body2-14-r text-neutral-80 ps-4"
+                        >1,000+ 個已訂購</span
+                      >
+                    </div>
+                  </div>
+                  <div class="pt-5">
+                    <h5 class="fs-6 text-primary-100">NT$ 5,480</h5>
+                    <span
+                      class="text-decoration-line-through body2-14-r gray808080"
+                      >NT$ 6,200</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide d-flex">
+                <div
+                  class="card position-relative border-0 d-flex flex-column h-100"
+                >
+                  <div class="img-wrapper mb-5">
+                    <img
+                      src="/HW-08/assets/top-2-DLkjmVc3.png"
+                      class="card-img-top"
+                      alt="top-2"
+                    />
+                  </div>
+                  <button
+                    type="button"
+                    class="position-absolute end-0 p-5 text-white heart-bg-radius border-0"
+                  >
+                    <span class="material-icons-outlined">
+                      favorite_border
+                    </span>
+                  </button>
+
+                  <h4 class="title-16-b mb-2">
+                    奈良梅花鹿餵食體驗＋和服散策｜日式風情輕旅行
+                  </h4>
+
+                  <div class="mb-2">
+                    <span
+                      class="badge bg-primary-10 text-primary-100 py-1 px-2 rounded-3 body2-14-r me-2"
+                      >中文導覽</span
+                    ><span
+                      class="badge bg-primary-10 text-primary-100 py-1 px-2 rounded-3 body2-14-r"
+                      >5 天前可免費取消</span
+                    >
+                  </div>
+                  <div class="pb-5 border-bottom border-neutral-40">
+                    <img
+                      src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20enable-background='new%200%200%2024%2024'%20height='20px'%20viewBox='0%200%2024%2024'%20width='20px'%20fill='%23F6BD2B'%3e%3cg%3e%3cpath%20d='M0%200h24v24H0V0z'%20fill='none'/%3e%3cpath%20d='M0%200h24v24H0V0z'%20fill='none'/%3e%3c/g%3e%3cg%3e%3cpath%20d='M12%2017.27%2018.18%2021l-1.64-7.03L22%209.24l-7.19-.61L12%202%209.19%208.63%202%209.24l5.46%204.73L5.82%2021%2012%2017.27z'/%3e%3c/g%3e%3c/svg%3e"
+                      alt="star"
+                      class="me-1"
+                    /><span class="body2-14-r text-neutral-80 me-1">4.7</span
+                    ><span
+                      class="body2-14-r text-neutral-60 pe-4 border-end border-neutral-40"
+                      >(880)</span
+                    ><span class="body2-14-r text-neutral-80 ps-4"
+                      >900+ 個已訂購</span
+                    >
+                  </div>
+
+                  <div class="pt-5">
+                    <h5 class="fs-6 text-primary-100">NT$ 2,250</h5>
+                    <span
+                      class="text-decoration-line-through body2-14-r gray808080"
+                      >NT$ 2,800</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide d-flex">
+                <div
+                  class="card position-relative border-0 d-flex flex-column h-100"
+                >
+                  <div class="img-wrapper mb-5">
+                    <img
+                      src="/HW-08/assets/top-3-Ba63bpk4.png"
+                      class="card-img-top"
+                      alt="top-3"
+                    />
+                  </div>
+                  <button
+                    type="button"
+                    class="position-absolute end-0 p-5 text-white heart-bg-radius border-0"
+                  >
+                    <span class="material-icons-outlined">
+                      favorite_border
+                    </span>
+                  </button>
+                  <div class="pb-5 border-bottom border-neutral-40">
+                    <h4 class="title-16-b mb-2">
+                      黑門市場美食巡禮｜在地職人帶路吃遍大阪經典小吃
+                    </h4>
+                    <div class="mb-2">
+                      <span
+                        class="badge bg-primary-10 text-primary-100 py-1 px-2 rounded-3 body2-14-r me-2"
+                        >專業導覽</span
+                      ><span
+                        class="badge bg-primary-10 text-primary-100 py-1 px-2 rounded-3 body2-14-r"
+                        >5 天前可免費取消</span
+                      >
+                    </div>
+                    <div>
+                      <img
+                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20enable-background='new%200%200%2024%2024'%20height='20px'%20viewBox='0%200%2024%2024'%20width='20px'%20fill='%23F6BD2B'%3e%3cg%3e%3cpath%20d='M0%200h24v24H0V0z'%20fill='none'/%3e%3cpath%20d='M0%200h24v24H0V0z'%20fill='none'/%3e%3c/g%3e%3cg%3e%3cpath%20d='M12%2017.27%2018.18%2021l-1.64-7.03L22%209.24l-7.19-.61L12%202%209.19%208.63%202%209.24l5.46%204.73L5.82%2021%2012%2017.27z'/%3e%3c/g%3e%3c/svg%3e"
+                        alt="star"
+                        class="me-1"
+                      /><span class="body2-14-r text-neutral-80 me-1">4.6</span
+                      ><span
+                        class="body2-14-r text-neutral-60 pe-4 border-end border-neutral-40"
+                        >(540)</span
+                      ><span class="body2-14-r text-neutral-80 ps-4"
+                        >700+ 個已訂購</span
+                      >
+                    </div>
+                  </div>
+                  <div class="pt-5">
+                    <h5 class="fs-6 text-primary-100">NT$ 1,580</h5>
+                    <span
+                      class="text-decoration-line-through body2-14-r gray808080"
+                      >NT$ 2,500</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide d-flex">
+                <div
+                  class="card position-relative border-0 d-flex flex-column h-100"
+                >
+                  <div class="img-wrapper mb-5">
+                    <img
+                      src="/HW-08/assets/top-4-FDuWEWBq.png"
+                      class="card-img-top"
+                      alt="top-4"
+                    />
+                  </div>
+                  <button
+                    type="button"
+                    class="position-absolute end-0 p-5 text-white heart-bg-radius border-0"
+                  >
+                    <span class="material-icons-outlined">
+                      favorite_border
+                    </span>
+                  </button>
+                  <div class="pb-5 border-bottom border-neutral-40">
+                    <h4 class="title-16-b mb-2">
+                      大阪夜景直升機體驗｜空中俯瞰梅田摩天輪＋海遊館
+                    </h4>
+                    <div class="mb-2">
+                      <span
+                        class="badge bg-primary-10 text-primary-100 py-1 px-2 rounded-3 body2-14-r me-2"
+                        >即買即用</span
+                      ><span
+                        class="badge bg-primary-10 text-primary-100 py-1 px-2 rounded-3 body2-14-r"
+                        >7 天前可免費取消</span
+                      >
+                    </div>
+                    <div>
+                      <img
+                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20enable-background='new%200%200%2024%2024'%20height='20px'%20viewBox='0%200%2024%2024'%20width='20px'%20fill='%23F6BD2B'%3e%3cg%3e%3cpath%20d='M0%200h24v24H0V0z'%20fill='none'/%3e%3cpath%20d='M0%200h24v24H0V0z'%20fill='none'/%3e%3c/g%3e%3cg%3e%3cpath%20d='M12%2017.27%2018.18%2021l-1.64-7.03L22%209.24l-7.19-.61L12%202%209.19%208.63%202%209.24l5.46%204.73L5.82%2021%2012%2017.27z'/%3e%3c/g%3e%3c/svg%3e"
+                        alt="star"
+                        class="me-1"
+                      /><span class="body2-14-r text-neutral-80 me-1">4.7</span
+                      ><span
+                        class="body2-14-r text-neutral-60 pe-4 border-end border-neutral-40"
+                        >(319)</span
+                      ><span class="body2-14-r text-neutral-80 ps-4"
+                        >600+ 個已訂購</span
+                      >
+                    </div>
+                  </div>
+                  <div class="pt-5">
+                    <h5 class="fs-6 text-primary-100">NT$ 6,890</h5>
+                    <span
+                      class="text-decoration-line-through body2-14-r gray808080"
+                      >NT$ 8,890</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+          </div>
+          <button
+            type="button"
+            class="btn position-absolute arrow_back d-none d-xxl-block"
+          >
+            <span class="material-icons-outlined p-5 shadow-sm">
+              arrow_back
+            </span>
+          </button>
+          <button
+            type="button"
+            class="btn position-absolute arrow_forward d-none d-xxl-block"
+          >
+            <span class="material-icons-outlined p-5 shadow-sm">
+              arrow_forward
+            </span>
+          </button>
+          <!-- Slider main container -->
+        </div>
+      </section>
+      <section class="travel-guide py-10 py-lg-13 bg-primary-10">
+        <div
+          class="container d-lg-flex justify-content-lg-between mb-6 mb-lg-12"
+        >
+          <h2 class="fs-3 fs-lg-1 mb-2 text-primary-100">
+            <span class="d-block">旅人攻略</span><span>看看大家怎麼玩！</span>
+          </h2>
+          <div class="title-16-b fs-lg-6">
+            <p class="mb-2">
+              這裡不只是遊記，更是來自旅人親身經歷的風格指南與靈感筆記。
+            </p>
+            <p>跟著他們的腳步走，找到屬於你的旅行意義。</p>
+          </div>
+        </div>
+        <div class="container-lg d-flex flex-column gap-7">
+          <div class="card border-0">
+            <div class="card-body d-md-flex gap-md-9 p-md-9">
+              <img
+                src="/HW-08/assets/guide-1-C96RgY2k.png"
+                class="card-img-top rounded-2 mb-5 mb-md-0"
+                alt="guide-1"
+              />
+              <div class="d-md-flex flex-md-column">
+                <div class="d-flex gap-2 mb-7">
+                  <span
+                    class="badge rounded-3 px-5 py-2 subtitle-14-b fs-md-title-16-b text-primary-100 bg-primary-10"
+                    >#大阪</span
+                  ><span
+                    class="badge rounded-3 px-5 py-2 subtitle-14-b fs-md-title-16-b text-primary-100 bg-primary-10"
+                    >#老街巡禮</span
+                  >
+                </div>
+                <h5 class="fs-4 fs-md-2 mb-2">空堀商店街的散步節奏</h5>
+                <p class="body2-14-r fs-md-body-16-r mb-10">
+                  離開熱鬧難波，走進空堀這座時間凍結的老街，每家店都像一段回憶：木造喫茶、手工小物、安靜的巷弄轉角。這裡沒有觀光氣氛，只有城市最真實的日常樣貌...
+                </p>
+
+                <a
+                  href="#"
+                  class="d-flex align-items-center title-16-b align-self-end me-2"
+                  >查看文章<span
+                    class="material-icons-outlined align-center p-1 text-primary-100"
+                  >
+                    arrow_forward
+                  </span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card border-0">
+            <div class="card-body d-md-flex gap-md-9 p-md-9">
+              <img
+                src="/HW-08/assets/guide-2-Cw_GkhC7.png"
+                class="card-img-top rounded-2 mb-5 mb-md-0"
+                alt="guide-2"
+              />
+              <div class="d-md-flex flex-md-column">
+                <div class="d-flex gap-2 mb-7">
+                  <span
+                    class="badge rounded-3 px-5 py-2 subtitle-14-b fs-md-title-16-b text-primary-100 bg-primary-10"
+                    >#大阪</span
+                  ><span
+                    class="badge rounded-3 px-5 py-2 subtitle-14-b fs-md-title-16-b text-primary-100 bg-primary-10"
+                    >#庶民美食</span
+                  >
+                </div>
+                <h5 class="fs-4 fs-md-2 mb-2">深夜的章魚燒與便利商店啤酒</h5>
+                <p class="body2-14-r fs-md-body-16-r mb-10">
+                  難波站邊的小巷，有開到凌晨的章魚燒老店。坐在路邊配一罐便利商店啤酒，看路人談天、喝醉、笑鬧，這種庶民感才是我最懷念的大阪味道。
+                </p>
+
+                <a
+                  href="#"
+                  class="d-flex align-items-center title-16-b align-self-end me-2"
+                  >查看文章<span
+                    class="material-icons-outlined align-center p-1 text-primary-100"
+                  >
+                    arrow_forward
+                  </span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card border-0">
+            <div class="card-body d-md-flex gap-md-9 p-md-9">
+              <img
+                src="/HW-08/assets/guide-3-DntSY7Dj.png"
+                class="card-img-top rounded-2 mb-5 mb-md-0"
+                alt="guide-3"
+              />
+              <div class="d-md-flex flex-md-column">
+                <div class="d-flex gap-2 mb-7">
+                  <span
+                    class="badge rounded-3 px-5 py-2 subtitle-14-b fs-md-title-16-b text-primary-100 bg-primary-10"
+                    >#大阪</span
+                  ><span
+                    class="badge rounded-3 px-5 py-2 subtitle-14-b fs-md-title-16-b text-primary-100 bg-primary-10"
+                    >#靜態旅行</span
+                  >
+                </div>
+                <h5 class="fs-4 fs-md-2 mb-2">一個人在中之島圖書館待一整天</h5>
+                <p class="body2-14-r fs-md-body-16-r mb-10">
+                  陰天的中之島很安靜，我選擇在百年圖書館裡消磨一整天。閱讀、打盹、寫明信片，從高聳書架與拱形窗邊找到片刻的呼吸空間。不趕行程的日子，才最像我想要的旅途。
+                </p>
+
+                <a
+                  href="#"
+                  class="d-flex align-items-center title-16-b align-self-end me-2"
+                  >查看文章<span
+                    class="material-icons-outlined align-center p-1 text-primary-100"
+                  >
+                    arrow_forward
+                  </span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card border-0">
+            <div class="card-body d-md-flex gap-md-9 p-md-9">
+              <img
+                src="/HW-08/assets/guide-4-CgFR3kdL.png"
+                class="card-img-top rounded-2 mb-5 mb-md-0"
+                alt="guide-4"
+              />
+              <div class="d-md-flex flex-md-column">
+                <div class="d-flex gap-2 mb-7">
+                  <span
+                    class="badge rounded-3 px-5 py-2 subtitle-14-b fs-md-title-16-b text-primary-100 bg-primary-10"
+                    >#大阪</span
+                  ><span
+                    class="badge rounded-3 px-5 py-2 subtitle-14-b fs-md-title-16-b text-primary-100 bg-primary-10"
+                    >#在地文化</span
+                  >
+                </div>
+                <h5 class="fs-4 fs-md-2 mb-2">跟著在地人玩「新世界」</h5>
+                <p class="body2-14-r fs-md-body-16-r mb-10">
+                  走進「新世界」，才發現大阪有多狂、有多生活。串炸店裡全是吆喝聲、立吞店排滿上班族，還有拍不完的霓虹與搞笑招牌。這一區又亂又熱鬧，但真實又迷人。
+                </p>
+
+                <a
+                  href="#"
+                  class="d-flex align-items-center title-16-b align-self-end me-2"
+                  >查看文章<span
+                    class="material-icons-outlined align-center p-1 text-primary-100"
+                  >
+                    arrow_forward
+                  </span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <nav class="bg-black text-white py-12 py-lg-100">
+  <div class="container">
+    <div class="row gy-10 align-items-center">
+      <div class="col-lg-6 d-flex flex-column gap-10 gap-lg-9">
+        <a href="#"
+          ><img src="data:image/png;base64,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" alt="logo" class="img-logo"
+        /></a>
+        <ul
+          class="d-flex flex-column flex-lg-row gap-5 gap-lg-9 list-unstyled mb-0"
+        >
+          <li class="body-16-r p-0">常見問題</li>
+          <li class="body-16-r p-0">關於我們</li>
+          <li class="body-16-r p-0">隱私權政策</li>
+          <li class="body-16-r p-0">使用者條款</li>
+        </ul>
+      </div>
+
+      <div
+        class="col-lg-6 d-flex flex-column gap-5 col-lg-6 align-items-lg-end"
+      >
+        <ul class="d-flex gap-5 list-unstyled mb-0">
+          <li class="p-0">
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM3SURBVHgBxVk9c1JBFL2k9BXGQlJqUpMZ8w8w2ILaQaVO6KNtGmywpk+KdJTR9Iz8g2QGaiGlNKSQer2Hd5csL4S3d3nAmTnzvu7uPdzdvftBjgJhjCnw5YBpr5EQmDD/MkfMAbOXy+X6FICcxphFQUCZ+V4c/2H25TphERPHbo+Zlx9wyHwmtm22G/n69BIoDqvMd8xrZkfjROqA2JqI7WmFLqu4zGwzayJ01fryUtc585hWAVdwIhXtU8YQoRfwQVogUswm8zSLqKX4OWO2VH6kwCltCBKIpq8xmvWMNgwReZJmVJI+t7ZmXeI7kj5ZfsrAdto8bQkYjJIxZgHacb4jR3UyyU2BYN9I/siz1bkPEr3zbUbP0RK5UbQRRPT6AbPDrnTu38yBecBY3n1ivtLUKdMlolhxHan6nghriBAfNEgBadG2fSgg7ykKv2beGD1uNNE08URRQBNj8tYsha6Yb0gPlLlU2GPAHEAg1nI9nxLoUxQmzqIodfgAmqYRfEnxwtIHn537I+f+LfNW3uHaZX5g/mS+gLAn6liGWQT3FAKLzv194huexyJgKM8gFrdfHTvfFsBojiAwsivhjPCd+c15hsih87xLHhBN0Q7p0E04RtOiGZ8779G07krojvnLeb4lDUxi7kuxbThpYyAcm4d86ObFccLOwmuQGJlRQpJ0SA6c5UKFnwNmC02M0aJZ0n+k+T7liyHFze+LaXaBQOSbQ99S3HmHFKeTS/IH+l2Ry94pykDTAAKxp1VtitjRPfOLlMM02aXHaceixbZHSnEA9tPxDCcDZeWlFtdxZeYHUZECYGT5h3ubZrC8KdHqsDkOUUXUuhSG6fJv9mQSi8RQmID134I6Fm89+EWdWaMtgzVUzaItrxPFzE8RfGHSth78oWK2v+08TjOsmw2eKjh+cQRS9zVums0ffXhvO2y4W/Kr1n14BHE/gvxIc69lv2ziU4QL72ZdUlFJKqpmNNtEUhcyRiXN3vcI2B7f2vmxHXgEjBGKLUBH6khdyWsP0d1z5n8iFqshiB0lDtHBfbHFFbtHTKnXmi2GSmBCLBzbvyDyQvdvCHD6FwSuLMpra5vEf/xiTZan5KCWAAAAAElFTkSuQmCC" alt="line" /></a>
+          </li>
+          <li class="p-0">
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALySURBVHgBxVmxctNAEF1lqFBjCkzrpCYz+QRIaB0o7Qpmkt7QpqEyLaZOCqjcMuk94Q9gxqkTt3GDi7gW++Sn5KwQ3Uo622/mzXms1e7z6u60t46kIpIkeanDjjIbYxKYK2+UU+W1chxF0aVUQFTGWEVBQFv5loGvlJcc5ypi7ti9UDb5A3aVT2k7VLupNaZJIAN2lG+U58pRmSD0AbFdih2XFVrkuK0cKrsUWtdfk75OlftSB+rgiI62JTAo9AwxpCyQKWVf2QuRNU+cE+WgVBze0JM1gYnoW43xWE9kzaDII5/RAefcyh5rQeyYc7L9mEE2aZuyIWAxcse4S9CWcx171CjI3lQRGhubP/bZztIFZu90k9lztMRuFiN+ma5Y/QXfDA7e6/BO2VC2+HWDzGPijDPlT43xQ/wxutQzzL4wzT21uUjq47chDp5oKm6LVcmtb+4xc6+kPvbU1+ciA2q5gjYsEry8LaXQBwmHPYMNFswOBKKWGxtuaEg4WARCU5rB57IoLH3wCXwmiyxPJAzuMojC0iKwVXRR582MK/S1ciA1fBEofmMIjLNKOATU10T5ST+iRPsjFUFN8ZasFrXnLQTOQxYH6quh/CqLOdSSiqCmeSpQ7k9jRZiIX1iPwj5KDV8E1sbNEzrEfKlbJPwtYTsz2KS7CzKI/WbXcEPlCf8fWARC0zUE4kxrORT9knD4brDBK3jxhmN5s65i4cIQJy3/8Dkrt5bLm+Kb3XIrTxczuX+UEylXbi2Xf0muSNwkktzRI92ouWuPlIeyeaDbMH5Q/jlZDN5FsCLxHT30wmGy+WPnvs/wOFljV8GJixbIsdW4n6y/9eEr0ZZuQLoH/FWrbh5B3JdKcfi4V3JeThZdhDPzYy1wdEBHnRBCmbUOdwzvtmZtAWft2+z9OKzYAsYKRX97RB/eSr5sE93tM99SLKohiJ3mmujgNm0x4vSIvst5mSNGKYE5sQic/QXRJN2/IcD0LwiMKspytH2Af7TooiUD/lElAAAAAElFTkSuQmCC" alt="yt" /></a>
+          </li>
+          <li class="p-0">
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKpSURBVHgBzVmxbtswED0ZmaolS9218ZwA/YMCcVc76GbP8Z49S7u4a7wnQLt5LbIb6CcUsOe4a7w0BaKZvSc/xqyaWCIl2XrAA2WJvns6SscjFUkgjDHH2nSUto1JIFHeK1fKpXIeRdFCAhD5dFZRENBTntHxnXLBNlERidPvjbLNGzhRvmLfqfZbFfVZSCAdDpQflLfKmY8T2oDYIcXOfYVuM9xTTpVDCi1rr01b18pTKQM1cE5DR1IxKPQGPsQXiJRyrLyoImo5fi6VEy8//MOF7AgMxLhoZwzrpewYFHme16nLZ662Yd3iO+Yz2Xupg31o27In4GVkxngKUMu5jhw1qyQ3BUJ9I/kjzw7+ucDoXe8zeo6W2I2ijSCitygbPTV6qLxS/jYbXPnY4HSJKPZdw5U8e2pjaf7HV/EER3SK4wNWJY8VRO+9Nm+dUz+VD2y9AC1q7w7aDmQ9eQeVQhm8c46/q5OPUg54YTp4BlHLzaU8Dp3jBykPaDqGwNeyLiybhjSCkk2MvjD5CJrTbbpBBGNbCdeEXxIAaopbUj/+SAlAYFJmiCNCDz87p79FG/yQAFBTkgqUzWqsScCi6x4C8bZUXtJXgDS7QCDyzYk0D9C0hECsaZsYQUzBixZX/J0mlFoW1IL0N7dpBuVNV5qDtPx7+pUtEkOAakb5iTyTQLy49NATI+VQ9gzVMHh2enSiuLcXJnfpoRf6DVh2nuZ1HJkd7io4frEFMiraeWx2v/Ux8fkDwj3hXdW9eQRxX4L8cLhrWS+b9S7CTeFh3WKoS0ODipamMW0hY/Tz+hfdArbbt+n8KAHbt7SBNxRJfEYbuZW87ya6u8/8SLGohiB2ldlEB4/YFy1Wj5hSb32WGF4CM2Lh2H6CaJPuZwgw/QSBFhO/BOAvVOxP30LRiR4AAAAASUVORK5CYII=" alt="fb" /></a>
+          </li>
+        </ul>
+
+        <p class="body2-14-r">
+          copyright © 2025 ZOBAA 旅遊網站 All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper3 = new Swiper(".swiper-3", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: "auto", // 讓每張依照內容寬度顯示
+        spaceBetween: 16, // 卡片間距
+        breakpoints: {
+          576: {
+            slidesPerView: 2.2,
+          },
+          0: {
+            slidesPerView: 1,
+          },
+        },
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+      const swiper4 = new Swiper(".swiper-4", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: "auto", // 讓每張依照內容寬度顯示
+        spaceBetween: 24, // 卡片間距
+
+        centeredSlides: false, // 不要置中（避免左右空白）
+        autoplay: {
+          delay: 1000,
+        },
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+  </body>
+</html>
