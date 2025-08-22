@@ -80,9 +80,20 @@ $utilities: map-merge(
         (
           14: 14px,
           // 會生成 icon-14
-          24: 24px // 會生成 icon-24,,,,,,,,,
+          24: 24px // 會生成 icon-24,,,,,,,,,,
         ),
-      responsive: true // 生成 icon-sm-14 / icon-lg-24 等,,,,,,,,,
+      responsive: true // 生成 icon-sm-14 / icon-lg-24 等,,,,,,,,,,
     ),
   )
 );
+.swiper-pagination-bullet {
+  background-color: white;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  width: 24px; /* 改變寬度 */
+
+  border-radius: 4px;
+  background-color: $primary-100;
+}
