@@ -22,6 +22,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>ZOBAA!</title>
   </head>
   <body>
@@ -72,11 +73,11 @@
         <div
           class="container text-white mb-10 d-flex flex-column flex-lg-row gap-7 gap-lg-0 justify-content-lg-between align-items-lg-center mb-10 mb-lg-12"
         >
-          <h2 class="fs-3 display-lg-2">
+          <h2 class="fs-3 display-lg-2" data-aos="fade-right">
             你的<br />
             專屬推薦
           </h2>
-          <div class="d-flex flex-column gap-4 gap-lg-7">
+          <div class="d-flex flex-column gap-4 gap-lg-7" data-aos="fade-left">
             <div
               class="d-flex flex-column gap-1 gap-lg-2 subtitle-14-b fs-lg-6"
             >
@@ -95,7 +96,7 @@
           </div>
         </div>
 
-        <div class="container d-flex gap-5 overflow-auto">
+        <div class="container d-flex gap-5 overflow-auto" data-aos="flip-left">
           <div
             class="card text-bg-dark overflow-hidden flex-shrink-0 flex-lg-shrink-1"
           >
@@ -203,7 +204,7 @@
             </div>
             <div class="col-12 col-lg-6">
               <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="flip-left">
                   <div class="card border-neutral-40 mb-5">
                     <img
                       src="/assets/images/index/intro-1.png"
@@ -218,7 +219,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="flip-left" data-aos-delay="100">
                   <div class="card border-neutral-40 mb-5">
                     <img
                       src="/assets/images/index/intro-2.png"
@@ -234,7 +235,11 @@
                   </div>
                 </div>
                 <div class="row offset-row position-relative">
-                  <div class="col-lg-6">
+                  <div
+                    class="col-lg-6"
+                    data-aos="flip-left"
+                    data-aos-delay="100"
+                  >
                     <div class="card border-neutral-40 mb-5">
                       <img
                         src="/assets/images/index/intro-3.png"
@@ -254,7 +259,11 @@
                     alt="text"
                     class="bg-text d-none d-lg-block position-absolute"
                   />
-                  <div class="col-lg-6">
+                  <div
+                    class="col-lg-6"
+                    data-aos="flip-left"
+                    data-aos-delay="1 00"
+                  >
                     <div class="card border-neutral-40 mb-5">
                       <img
                         src="/assets/images/index/intro-4.png"
@@ -282,7 +291,7 @@
           <div
             class="d-lg-flex justify-content-lg-between align-items-lg-center"
           >
-            <div class="position-relative">
+            <div class="position-relative" data-aos="fade-right">
               <h2 class="fs-3 display-lg-2 text-primary-100 mb-7">
                 <span class="d-block mb-2">今年旅行的</span>
                 <span>靈感地圖</span>
@@ -326,7 +335,7 @@
                 </button>
               </div>
             </div>
-            <div>
+            <div data-aos="fade-left">
               <p class="subtitle-14-b fs-lg-6 text-primary-100">
                 來自旅人搜尋、收藏與討論最多的目的地排行榜，<br />
                 一場風格與故事感兼具的靈感旅行，就從這裡開始。
@@ -609,6 +618,7 @@
         <div class="container">
           <h2
             class="fs-3 display-lg-2 text-primary-100 mb-10 mb-lg-12 position-relative"
+            data-aos="fade-right"
           >
             <span class="d-block mb-2">搜尋墨爾本嗎？</span>
             <span>來點行程參考！ </span>
@@ -911,10 +921,12 @@
             src="/assets/images/index/card.png"
             class="card-img mb-2 mb-lg-7"
             alt="card"
+            data-aos="flip-up"
           />
 
           <div
             class="why-choose p-7 p-lg-9 mb-2 d-lg-flex justify-content-lg-between align-items-lg-stretch"
+            data-aos="zoom-in"
           >
             <div class="w-lg-50 col-lg-6">
               <h3 class="fs-5 fs-lg-1 text-primary-100 mb-5 mb-7">
@@ -970,7 +982,7 @@
       </section>
     </main>
     <%- include('./layout/footer'); -%>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="../main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
