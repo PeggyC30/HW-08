@@ -19,3 +19,30 @@ li {
   padding-top: 13.5px;
   padding-bottom: 13.5px;
 }
+.navbar {
+  background-color: $white;
+}
+@media (min-width: 992px) {
+  html {
+    scroll-timeline-name: --my-scroll-progress; /* 給這個時間軸一個名字 */
+    scroll-timeline-axis: block; /* block 代表垂直滾動（Y 軸） */
+  }
+
+  .navbar {
+    animation: nav-bg-change forwards; /* 你的 @keyframes 動畫 */
+    animation-timeline: --my-scroll-progress; /* 將動畫綁定到先前定義的滾動時間軸 */
+    animation-range: 0px 88px;
+  }
+  @keyframes nav-bg-change {
+    from {
+      /* 0% 狀態 */
+      background-color: transparent;
+    }
+    to {
+      /* 100% 狀態 */
+      background-color: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(8px);
+      border-bottom: 0.5px solid $neutral-40;
+    }
+  }
+}
